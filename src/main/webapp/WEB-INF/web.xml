@@ -1,7 +1,28 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
-
-<web-app>
-  <display-name>Archetype Created Web Application</display-name>
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<!-- 配置字符过滤器 -->
+	<!--  <filter>
+		<filter-name>encodeFilter</filter-name>
+		<filter-class>com.hillstone.autotest.result.util.EncodeFilter</filter-class>
+	</filter>  -->
+	<!-- 配置字符过滤器的URL映射 -->
+	<!-- <filter-mapping>
+		<filter-name>encodeFilter</filter-name>
+		<url-pattern>*</url-pattern>
+	</filter-mapping>  --> 
+	<servlet>
+		<servlet-name>coreServlet</servlet-name>
+		<servlet-class>ort.littleDobe.servlet.CoreServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>coreServlet</servlet-name>
+		<url-pattern>/coreServlet</url-pattern>
+	</servlet-mapping>
+	
 </web-app>
