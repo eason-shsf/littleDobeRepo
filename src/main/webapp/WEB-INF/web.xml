@@ -24,5 +24,4 @@
 		<servlet-name>coreServlet</servlet-name>
 		<url-pattern>/coreServlet</url-pattern>
 	</servlet-mapping>
-	
 </web-app>
