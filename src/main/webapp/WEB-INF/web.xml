@@ -18,7 +18,7 @@
 	</filter-mapping>  --> 
 	<servlet>
 		<servlet-name>coreServlet</servlet-name>
-		<servlet-class>ort.littleDobe.servlet.CoreServlet</servlet-class>
+		<servlet-class>org.littleDobe.servlet.CoreServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>coreServlet</servlet-name>
